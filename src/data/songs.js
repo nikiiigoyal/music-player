@@ -1,4 +1,4 @@
-export const songs = [
+export const songsData = [
   {
     id: 1,
     title: "Hey",
