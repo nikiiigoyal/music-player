@@ -7,7 +7,7 @@ import MusicList from "./components/SongList";
 import Player from "./components/Player";
 import SearchBar from "./components/SearchBar";
 import Sidebar from "./components/Sidebar";
-// import { useAudio } from "./context/AudioContext";
+import { useAudio } from "./context/AudioContext";
 import songsData from "./data/songs";
 import "./scss/App.scss";
 

@@ -1,27 +1,31 @@
-import React from "react";
+// import React, { useState } from 'react';
+// import { InputGroup, FormControl } from 'react-bootstrap';
+// import { BsSearch } from 'react-icons/bs';
+// import '../scss/SearchBar.scss';
 
-const SongCard = ({ song, onSelect, onToggleFavorite, isFavorite }) => {
-  return (
-    <div className="song-card" onClick={() => onSelect(song)}>
-      <img src={song.thumbnail} alt={song.title} />
-      <div className="song-info">
-        <h5>{song.title}</h5>
-        <p>{song.artistName}</p>
-      </div>
-      <div className="actions">
-        <span className="duration">{song.duration}</span>
-        <span
-          className="favorite"
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleFavorite(song);
-          }}
-        >
-          {isFavorite ? "❤️" : "⋮"}
-        </span>
-      </div>
-    </div>
-  );
-};
+// const SearchBar = ({ onSearch }) => {
+//     const [searchTerm, setSearchTerm] = useState('');
 
-export default SongCard;
+//     const handleSearchChange = (e) => {
+//         const term = e.target.value;
+//         setSearchTerm(term);
+//         onSearch(term);
+//     };
+
+//     return (
+//         <div className="search-bar">
+//             <InputGroup>
+//                 <FormControl
+//                     placeholder="Search Song, Artist"
+//                     value={searchTerm}
+//                     onChange={handleSearchChange}
+//                 />
+//                 <InputGroup.Text>
+//                     <BsSearch />
+//                 </InputGroup.Text>
+//             </InputGroup>
+//         </div>
+//     );
+// };
+
+// export default SearchBar;
